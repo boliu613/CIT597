@@ -11,7 +11,6 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(:version => 20150404193818) do
 
   create_table "colleges", :force => true do |t|
@@ -35,8 +34,7 @@ ActiveRecord::Schema.define(:version => 20150404193818) do
     t.datetime "updated_at",    :null => false
     t.string   "website"
     t.string   "admweb"
-=======
-ActiveRecord::Schema.define(:version => 20150404185030) do
+  end
 
   create_table "users", :force => true do |t|
     t.string   "name"
@@ -46,7 +44,6 @@ ActiveRecord::Schema.define(:version => 20150404185030) do
     t.float    "SAT"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
->>>>>>> 012b617640d5d8709f496d16132c60ff673c915a
   end
 
 end
