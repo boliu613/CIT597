@@ -1,0 +1,83 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>School ID:</b>
+  <%= @college.u_id %>
+</p>
+
+<p>
+  <b>Institution:</b>
+  <%= @college.inst_name %>
+</p>
+
+<p>
+  <b>Tuition and Fees:</b>
+  <%= @college.tuition_fees %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @college.state %>
+</p>
+
+<p>
+  <b>Control of system:</b>
+  <%= @college.control %>
+</p>
+
+<p>
+  <b>Urbanization:</b>
+  <%= @college.urbanization %>
+</p>
+
+<p>
+  <b>Total Enrollment:</b>
+  <%= @college.total_enroll %>
+</p>
+
+<p>
+  <b>Undergraduates Enrollment:</b>
+  <%= @college.under_enroll %>
+</p>
+
+<p>
+  <b>Graduates Enrollment:</b>
+  <%= @college.grad_enroll %>
+</p>
+
+<p>
+  <b>Student to Faculty Ratio:</b>
+  <%= @college.stu_fac_ratio %>
+</p>
+
+<p>
+  <b>Applicants Total:</b>
+  <%= @college.app_total %>
+</p>
+
+<p>
+  <b>Enrollments Total:</b>
+  <%= @college.enroll_total %>
+</p>
+
+<p>
+  <b>Applicants Total:</b>
+  <%= @college.app_total %>
+</p>
+
+<p>
+  <b>Percentage of Admission:</b>
+  <%= @college.per_adm %>
+</p>
+
+<p>
+  <b>School Website:</b>
+  <%= @college.website %>
+</p>
+
+<p>
+  <b>Admission URL:</b>
+  <%= @college.admweb %>
+</p>
+
+

@@ -1,0 +1,64 @@
+# == Schema Information
+#
+# Table name: colleges
+#
+#  id            :integer          not null, primary key
+#  u_id          :integer
+#  inst_name     :string(255)
+#  year          :integer
+#  tuition_fees  :integer
+#  state         :string(255)
+#  region        :string(255)
+#  control       :string(255)
+#  urbanization  :string(255)
+#  total_enroll  :integer
+#  under_enroll  :integer
+#  grad_enroll   :integer
+#  stu_fac_ratio :integer
+#  app_total     :integer
+#  adm_total     :integer
+#  enroll_total  :integer
+#  per_adm       :integer
+#  created_at    :datetime         not null
+#  updated_at    :datetime         not null
+#  website       :string(255)
+#  admweb        :string(255)
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  u_id: 1
+  inst_name: MyString
+  year: 1
+  tuition_fees: 1
+  state: MyString
+  region: MyString
+  control: MyString
+  urbanization: MyString
+  total_enroll: 1
+  under_enroll: 1
+  grad_enroll: 1
+  stu_fac_ratio: 1
+  app_total: 1
+  adm_total: 1
+  enroll_total: 1
+  per_adm: 1
+
+two:
+  u_id: 1
+  inst_name: MyString
+  year: 1
+  tuition_fees: 1
+  state: MyString
+  region: MyString
+  control: MyString
+  urbanization: MyString
+  total_enroll: 1
+  under_enroll: 1
+  grad_enroll: 1
+  stu_fac_ratio: 1
+  app_total: 1
+  adm_total: 1
+  enroll_total: 1
+  per_adm: 1

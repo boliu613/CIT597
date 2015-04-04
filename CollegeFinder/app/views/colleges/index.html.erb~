@@ -1,0 +1,54 @@
+
+<%= flash[:notice] %>
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Institution Name</th>
+      <th>Tuition and fees</th>
+	<th>State</th>
+	<th>Control</th>
+	<th>Urbanization</th>
+	<th>Total_enroll</th>
+	<th>Under_enroll</th>
+	<th>Grad_enroll</th>
+	<th>Student to faculty ratio</th>
+	<th>Applicants_total</th>
+	<th>Admission total</th>
+	<th>Enrollment total</th>
+	<th>Percent of admission</th>
+	<th>School Website</th>
+	<th>Admission website</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @colleges.each do |college| %>
+      <tr>
+        <td><%= college.u_id %></td>
+        <td><%= college.inst_name %></td>
+        <td><%= college.tuition_fees %></td>
+        <td><%= college.state %></td>
+        <td><%= college.control %></td>
+        <td><%= college.urbanization %></td>
+        <td><%= college.total_enroll %></td>
+        <td><%= college.under_enroll %></td>
+        <td><%= college.grad_enroll %></td>
+        <td><%= college.stu_fac_ratio %></td>
+        <td><%= college.app_total %></td>
+        <td><%= college.adm_total %></td>
+        <td><%= college.enroll_total %></td>
+        <td><%= college.per_adm %></td>
+	<td><%= college.website %></td>
+	<td><%= college.admweb %></td>
+
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<div>
+<h3>Import a CSV File</h3>
+  <%= form_tag import_colleges_path, multipart: true do %>
+    <%= file_field_tag :file %>
+    <%= submit_tag "Import CSV" %>
+  <% end %>
+</div>

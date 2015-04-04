@@ -1,7 +1,7 @@
 CollegeFinder::Application.routes.draw do
   #get "colleges/:u_id" =>'colleges#schoolinfo'
 
-  get 'colleges/:u_id' => 'colleges#show'
+  get 'colleges/school/:u_id' => 'colleges#schoolinfo'
   
 
   resources :colleges do
