@@ -22,4 +22,12 @@ class CollegesController < ApplicationController
     end
   end
 
+  def search      
+    if params[:q]
+      @colleges = College.find(:all, :conditions => ['inst_name LIKE ?', "%#{params[:q]}%"])
+    else
+      @colleges = College.find(:all)
+    end
+  end
+
 end
