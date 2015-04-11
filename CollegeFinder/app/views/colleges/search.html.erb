@@ -11,6 +11,7 @@
   <tr>
     <th>Name</th>
     <th>State</th>
+    <th>Tuition and Fees</th>
     <th>Control</th>
     <th>Urbanization</th>
     <th></th>
@@ -21,7 +22,8 @@
 <% @colleges.each do |college| %>
   <tr>
     <td><%= college.inst_name %></td> 
-    <td><%= college.state %></td>   
+    <td><%= college.state %></td>  
+    <td><%= college.tuition_fees %></td>
     <td><%= college.control %></td>
     <td><%= college.urbanization %></td>
     <td><%= link_to 'Show', college %></td>

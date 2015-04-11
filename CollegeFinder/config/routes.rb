@@ -1,5 +1,6 @@
 CollegeFinder::Application.routes.draw do
   get "colleges/search"
+  get "colleges/advance_search"
   get "colleges/hello"
   #get "colleges/:u_id" =>'colleges#schoolinfo'
 
