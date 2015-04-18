@@ -1,21 +1,10 @@
-# == Schema Information
-#
-# Table name: users
-#
-#  id         :integer          not null, primary key
-#  name       :string(255)
-#  email      :string(255)
-#  password   :string(255)
-#  GPA        :float
-#  SAT        :float
-#  created_at :datetime         not null
-#  updated_at :datetime         not null
-#
-
 class User < ActiveRecord::Base
-  attr_accessible :GPA, :SAT, :email, :name, :password
+  # Include default devise modules. Others available are:
+  # :token_authenticatable, :encryptable, :confirmable, :lockable, :timeoutable and :omniauthable
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :trackable, :validatable
 
-  validates :name, :presence => true
-  validates :email, :presence => true
-  validates :password, :presence => true
+  # Setup accessible (or protected) attributes for your model
+  attr_accessible :email, :password, :password_confirmation, :remember_me
+  # attr_accessible :title, :body
 end

@@ -1,4 +1,8 @@
 CollegeFinder::Application.routes.draw do
+  devise_for :users do 
+    get 'users/sign_out' => 'devise/sessions#destroy'
+  end
+
   get "colleges/search"
   get "colleges/advance_search"
   get "colleges/hello"
@@ -12,9 +16,6 @@ CollegeFinder::Application.routes.draw do
   end
 
   root :to => 'colleges#index'
-  resources :users
-
-
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

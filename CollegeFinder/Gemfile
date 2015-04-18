@@ -21,6 +21,7 @@ end
 gem 'annotate'
 gem 'test-unit-rails'
 gem 'jquery-rails'
+gem 'devise', '~>1.1.rc0'
 
 group :test, :development do
   gem 'cucumber-rails', :require => false
