@@ -23,6 +23,8 @@
 #  updated_at    :datetime         not null
 #  website       :string(255)
 #  admweb        :string(255)
+#  longitude     :string(255)
+#  latitude      :string(255)
 #
 
 require 'test_helper'

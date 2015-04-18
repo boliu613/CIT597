@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20150404193818) do
+ActiveRecord::Schema.define(:version => 20150418201916) do
 
   create_table "colleges", :force => true do |t|
     t.integer  "u_id"
@@ -34,6 +34,8 @@ ActiveRecord::Schema.define(:version => 20150404193818) do
     t.datetime "updated_at",    :null => false
     t.string   "website"
     t.string   "admweb"
+    t.string   "longitude"
+    t.string   "latitude"
   end
 
   create_table "users", :force => true do |t|
