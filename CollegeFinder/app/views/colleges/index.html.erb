@@ -6,8 +6,13 @@
     
   <body>
     <h1>Welcome to CollegeFinder!</h1>
-    
+		<% if user_signed_in? %>
+		  <div>Signed in as... <%= current_user.email %></div>
+		<% end %>
       <a href="colleges/hello">Search</a>
       <a href="colleges/advance_search">Advance Search</a>
+	  
+	  
 	</body>
+	
 </html>
