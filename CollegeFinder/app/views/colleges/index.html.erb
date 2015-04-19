@@ -1,18 +1,40 @@
 
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>CollegeFinder</title>
-    
+<head>
+  <title>CollegeFinder</title>
+
   <body>
     <h1>Welcome to CollegeFinder!</h1>
-		<% if user_signed_in? %>
-		  <div>Signed in as... <%= current_user.email %></div>
-		<% end %>
-      <a href="colleges/hello">Search</a>
-      <a href="colleges/advance_search">Advance Search</a>
-	  
-	  
-	</body>
-	
-</html>
+
+    <% if user_signed_in? %>
+    <div>Signed in as... <%= current_user.email %></div>
+    <% end %>
+
+    <div id="nav">
+      <ul id="menu">
+        <li><a href="colleges/hello">Search</a></li>
+        <li><a href="colleges/advance_search">Advance Search</a></li>
+      </ul>
+    </div>
+
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=366470386877496";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="fb-share-button" data-href="https://github.com/boliu613/CIT597" data-layout="button"></div>
+
+    <br>
+
+    <a href="https://twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+  </body>
+
+  </html>
