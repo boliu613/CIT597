@@ -47,3 +47,4 @@ end
 Then(/^I can't creat a user without email$/) do
   assert page.has_content?("Email can't be blank")
 end
+

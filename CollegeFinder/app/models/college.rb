@@ -22,7 +22,7 @@
 #  created_at    :datetime         not null
 #  updated_at    :datetime         not null
 #  website       :string(255)
-#  admweb        :string(255) 
+#  admweb        :string(255)
 #  longitude     :string(255)
 #  latitude      :string(255)
 #
@@ -30,6 +30,7 @@
 class College < ActiveRecord::Base
   attr_accessible :longitude,:latitude,:website,:admweb,:adm_total, :app_total, :control, :enroll_total, :grad_enroll, :inst_name, :per_adm, :state, :stu_fac_ratio, :total_enroll, :tuition_fees, :u_id, :under_enroll, :urbanization
 
+  belongs_to :user
 require 'csv'
 
   def self.import(file)

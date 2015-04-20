@@ -22,3 +22,4 @@ Feature: User sign up page
     Given I'm on the user sign up page
     When I add a new user without email
     Then I can't creat a user without email
+
