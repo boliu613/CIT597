@@ -3,6 +3,7 @@ CollegeFinder::Application.routes.draw do
     get 'users/sign_out' => 'devise/sessions#destroy'
   end
 
+  get "users/userpage"
   get "colleges/search"
   get "colleges/advance_search"
   get "colleges/hello"

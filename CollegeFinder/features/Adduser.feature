@@ -23,3 +23,7 @@ Feature: User sign up page
     When I add a new user without email
     Then I can't creat a user without email
 
+  Scenario: Add an user with wrong confirmation password
+    Given I'm on the user sign up page
+    When I add a new user with all the information
+    Then I can't creat a user with wrong confirmation password
