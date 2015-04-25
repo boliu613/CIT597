@@ -2,7 +2,8 @@ CollegeFinder::Application.routes.draw do
   devise_for :users do 
     get 'users/sign_out' => 'devise/sessions#destroy'
   end
-	
+
+  get "users/userpage"
   get "colleges/search"
   get "colleges/advance_search"
   get "colleges/hello"
@@ -21,7 +22,7 @@ CollegeFinder::Application.routes.draw do
     collection { post :import }
   end
 
-  root :to => 'colleges#index'
+  root :to => 'colleges#index',as: :homepage
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

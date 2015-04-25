@@ -48,3 +48,15 @@ Then(/^I can't creat a user without email$/) do
   assert page.has_content?("Email can't be blank")
 end
 
+When(/^I add a new user with all the information$/) do
+  fill_in 'Username', :with => "Tom"
+  fill_in 'Email', :with => "tom@gmail.com"
+  fill_in 'Password', :with => "tom597"
+  fill_in 'Password confirmation', :with => 'tom555'
+  click_button 'Sign up'
+end
+
+Then(/^I can't creat a user with wrong confirmation password$/) do
+  assert page.has_content?("Password doesn't match confirmation")
+end
+
