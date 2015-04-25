@@ -101,5 +101,9 @@ class CollegesController < ApplicationController
     end   
   end
 
-
+  def addCollege
+    current_user.colleges << College.find(params[:current_college])
+    render users_userpage_path
+  end
+  
 end

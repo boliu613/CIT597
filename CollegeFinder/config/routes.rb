@@ -9,11 +9,7 @@ CollegeFinder::Application.routes.draw do
   get "colleges/search"
   get "colleges/advance_search"
   get "colleges/hello"
-
-  # devise_scope :user do
-  #
-  # end
-	
+  post "colleges/addCollege"	
 
   #get "colleges/:u_id" =>'colleges#schoolinfo'
 
