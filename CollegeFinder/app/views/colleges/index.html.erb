@@ -42,15 +42,13 @@
                     <div class="intro-message">
                         <h1>CollegeFinder</h1>
                         <h3>Get started now!</h3>
-<div id="search-container">
+
 					<%= form_tag(colleges_search_path, :method => "get") do %>
   					<%= label_tag(:q, "Search for:") %>
-<input type="text" name="q" />
   					<%= text_field_tag(:q) %>
-
   					<%= submit_tag("Search") %>
 					<% end %>
-</div>
+
                         <hr class="intro-divider">
                         <ul class="list-inline intro-social-buttons">
                             <li>
