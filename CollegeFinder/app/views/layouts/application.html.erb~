@@ -25,10 +25,10 @@
     <% if alert %>
       <p class="alert"><%= alert %></p>
     <% end %>
-	<!--
+	
 	<p class="notice"><%= notice %></p>
 	<p class="alert"><%= alert %></p>
-	
+	<!--
 	<div id="user_nav">
 		<% if user_signed_in? %>
 		Signed in as <%= current_user.username %>. Not you?
