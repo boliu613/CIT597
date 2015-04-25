@@ -17,27 +17,13 @@
 	<%= render 'shared/navbar'%>
 </br>
 </br>
+	<% if notice %>
 
-    <% if notice %>
-      <p class="notice"><%= notice %></p>
+<div class="alert alert-success" role="alert"><%= notice %></div>
     <% end %>
-
     <% if alert %>
-      <p class="alert"><%= alert %></p>
-    <% end %>
-	
-	<p class="notice"><%= notice %></p>
-	<p class="alert"><%= alert %></p>
-	<!--
-	<div id="user_nav">
-		<% if user_signed_in? %>
-		Signed in as <%= current_user.username %>. Not you?
-		<%= link_to "Sign out", destroy_user_session_path %>
-		<% else %>
-		<%= link_to "Sign up", new_user_registration_path%> or <%= link_to "Sign in", new_user_session_path %>
-		<% end %>
-	</div>-->
-	
+<div class="alert alert-warning" role="alert"><%= alert %></div>
+    <% end %> 
 	<%= yield %>
 
 <!-- Latest compiled and minified JavaScript -->
