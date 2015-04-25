@@ -1,6 +1,8 @@
 CollegeFinder::Application.routes.draw do
   devise_for :users do 
     get 'users/sign_out' => 'devise/sessions#destroy'
+		get "users/sign_in" => "devise/sessions#new" , as: :signin
+		get "users/sign_up" => "devise/registrations#new" , as: :signup 
   end
 
   get "users/userpage"
@@ -8,10 +10,9 @@ CollegeFinder::Application.routes.draw do
   get "colleges/advance_search"
   get "colleges/hello"
 
-	devise_scope :user do 
-		get "signin" => "devise/sessions#new", as: :signin
-		get "signup" => "devise/registrations#new", as: :signup 
-	end
+  # devise_scope :user do
+  #
+  # end
 	
 
   #get "colleges/:u_id" =>'colleges#schoolinfo'

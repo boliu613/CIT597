@@ -4,6 +4,6 @@ class ApplicationController < ActionController::Base
     users_userpage_path(current_user)
   end
   def after_sign_out_path_for(resource_or_scope)
-    root_path
+    homepage_path
   end
 end
