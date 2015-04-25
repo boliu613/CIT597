@@ -88,7 +88,7 @@
   <%= @college.longitude %>
 </p>
 
-
+<p><%= button_to "Add to your favorites", action: "addCollege" , :current_college => @college.id%></p>
 
 <script
 src="http://maps.googleapis.com/maps/api/js">
