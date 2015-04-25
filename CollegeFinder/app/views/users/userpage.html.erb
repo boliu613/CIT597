@@ -1,1 +1,60 @@
-<h1>UserPage</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UserPage</title>
+  <style>
+  h1{
+  	text-align:left;
+/*  	color:#660099;*/
+/*  	font-family:Comic Sans MS;*/
+  	font-size:40px;
+  	padding:0.8cm;
+  }
+  table{
+  	border: medium dashed #9966FF;
+  	padding:0.2cm;
+  }
+  th{
+  	text-align:center;
+/*  	font-family:Comic Sans MS;*/
+/*  	background-color:#FF99CC;*/
+  	padding:0.3cm;
+  	/*color:white;*/
+  }
+  </style>
+</head>
+
+<body>
+<h1><%= current_user.username %> 's page</h1>
+<table>
+
+<div id="nav">
+   <ul id="menu">
+	   <th><%= link_to "Homepage", root_path %></a></th>
+       <th><a href="../colleges/hello">Search</a></th>
+       <th><a href="../colleges/advance_search">Advance Search</a></th>
+	   <th><%= link_to "Change your password", edit_user_registration_path %></th>
+   </ul>
+</div>
+</table>
+	
+	
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=366470386877496";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="fb-share-button" data-href="https://github.com/boliu613/CIT597" data-layout="button"></div>
+
+    <br>
+
+    <a href="https://twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+	
+  </body>
+
+</html>
