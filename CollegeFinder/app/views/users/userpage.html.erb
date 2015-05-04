@@ -10,28 +10,34 @@
   	font-size:40px;
   	padding:0.8cm;
   }
-<<<<<<< HEAD
- 
-=======
-  table{
+
+.navvvlist{
 /*  	border: medium dashed #9966FF;*/
-  	padding:0.2cm;
+border: 2px #D1D1E0 dashed;
+  	padding:1cm;
   }
->>>>>>> a08c39cef189cf73b4f2a503c5d3ce71045fdf8f
   th{
   	text-align:center;
 /*  	font-family:Comic Sans MS;*/
 /*  	background-color:#FF99CC;*/
-  	padding:0.3cm;
+  	padding-right:1.5cm;
+	padding-left:1.5cm;
+	padding-top:0.5cm;
+	padding-bottom:0.5cm;
   	/*color:white;*/
   }
+
+  td{
+	text-align:center;
+}
+
   </style>
 </head>
 
 <body>
 <div class="container">
 <h1><%= current_user.username %> 's page</h1>
-<table>
+<table class = "navvvlist">
 
 <div id="nav">
    <ul id="menu">
@@ -42,11 +48,10 @@
    </ul>
 </div>
 </table>
-</div>
 
 
 <div class="row text-left">	
-<table>
+<table class="list">
   <tr>
     <th>Name</th>
     <th>State</th>
@@ -73,9 +78,6 @@ You haven't added your favorite schools!! Go search and add schools!
 <% end %>
 </div>
 
-    
-	
->>>>>>> a08c39cef189cf73b4f2a503c5d3ce71045fdf8f
   </body>
 
 </html>
