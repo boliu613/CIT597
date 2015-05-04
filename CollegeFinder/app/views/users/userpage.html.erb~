@@ -22,7 +22,6 @@
 </head>
 
 <body>
-<div class="container">
 <h1><%= current_user.username %> 's page</h1>
 <table>
 
@@ -35,7 +34,7 @@
    </ul>
 </div>
 </table>
-	</div>
+	
   </body>
 
 </html>
