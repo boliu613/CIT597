@@ -37,7 +37,7 @@ class User < ActiveRecord::Base
   #   :case_sensitive => false
   # } # etc.
   
-  has_many :colleges
+  has_and_belongs_to_many :colleges
   
   def self.find_first_by_auth_conditions(warden_conditions)
     conditions = warden_conditions.dup

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20150420002023) do
+ActiveRecord::Schema.define(:version => 20150425222714) do
 
   create_table "colleges", :force => true do |t|
     t.integer  "u_id"
@@ -37,6 +37,14 @@ ActiveRecord::Schema.define(:version => 20150420002023) do
     t.string   "longitude"
     t.string   "latitude"
   end
+
+  create_table "colleges_users", :id => false, :force => true do |t|
+    t.integer "college_id"
+    t.integer "user_id"
+  end
+
+  add_index "colleges_users", ["college_id", "user_id"], :name => "index_colleges_users_on_college_id_and_user_id"
+  add_index "colleges_users", ["user_id"], :name => "index_colleges_users_on_user_id"
 
   create_table "users", :force => true do |t|
     t.string   "email",                                 :default => "", :null => false

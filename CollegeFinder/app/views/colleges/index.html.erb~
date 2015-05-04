@@ -43,6 +43,10 @@
                         <h1>CollegeFinder</h1>
                         <h3>Get started now!</h3>
 
+<<<<<<< HEAD
+=======
+					
+>>>>>>> a08c39cef189cf73b4f2a503c5d3ce71045fdf8f
 
                         <hr class="intro-divider">
                         <ul class="list-inline intro-social-buttons">
@@ -103,6 +107,7 @@
 					<a target="_blank" href="http://www.columbia.edu/">Columbia University</a>	</br>
 					<a target="_blank" href="http://www.upenn.edu/">University of Pennsylvania</a>	</br>
 					<a target="_blank" href="http://web.mit.edu/">Massachusetts Institute of Technology</a>	</br>
+					<a target="_blank" href="http://www.yale.edu/">Yale University</a>	</br>
 
 			
 					</p>
@@ -132,5 +137,8 @@
     <script src="js/bootstrap.min.js"></script>
 
 </body>
+
+
+
 
 </html>

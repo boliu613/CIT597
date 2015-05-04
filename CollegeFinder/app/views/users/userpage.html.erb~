@@ -10,7 +10,14 @@
   	font-size:40px;
   	padding:0.8cm;
   }
+<<<<<<< HEAD
  
+=======
+  table{
+/*  	border: medium dashed #9966FF;*/
+  	padding:0.2cm;
+  }
+>>>>>>> a08c39cef189cf73b4f2a503c5d3ce71045fdf8f
   th{
   	text-align:center;
 /*  	font-family:Comic Sans MS;*/
@@ -22,6 +29,7 @@
 </head>
 
 <body>
+<div class="container">
 <h1><%= current_user.username %> 's page</h1>
 <table>
 
@@ -34,7 +42,41 @@
    </ul>
 </div>
 </table>
+<<<<<<< HEAD
+	</div>
+=======
+
+<div class="row text-left">	
+<table>
+  <tr>
+    <th>Name</th>
+    <th>State</th>
+    <th>Control</th>
+    <th>Urbanization</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% if not current_user.colleges.empty? %>
+
+<% current_user.colleges.each do |college| %>
+  <tr>
+    <td><%= college.inst_name %></td> 
+    <td><%= college.state %></td>   
+    <td><%= college.control %></td>
+    <td><%= college.urbanization %></td>
+    <td><%= link_to 'Show', college %></td>
+  </tr>
+<% end %>
+<% else %>
+You haven't added your favorite schools!! Go search and add schools!
+<% end %>
+</div>
+
+    
 	
+>>>>>>> a08c39cef189cf73b4f2a503c5d3ce71045fdf8f
   </body>
 
 </html>

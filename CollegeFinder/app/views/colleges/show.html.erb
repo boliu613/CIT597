@@ -88,11 +88,11 @@
   <%= @college.longitude %>
 </p>
 
+<% if user_signed_in? %>
+<p><%= button_to "Add to your favorites", action: "addCollege" , :current_college => @college.id%></p>
+<% end %>
 
-
-<script
-src="http://maps.googleapis.com/maps/api/js">
-</script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 
 <script>
   var myCenter=new google.maps.LatLng(<%= @college.latitude %>,<%= @college.longitude %>);
