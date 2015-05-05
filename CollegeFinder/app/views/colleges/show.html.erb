@@ -2,6 +2,10 @@
 <h1>Basic Information</h1>
 <p id="notice"><%= notice %></p>
 
+<% if user_signed_in? %>
+<p><%= button_to "Add to your favorites", action: "addCollege" , :current_college => @college.id%></p>
+<% end %>
+
 <p>
   <b>Institution:</b>
   <%= @college.inst_name %>
@@ -87,9 +91,7 @@
   <%= @college.longitude %>
 </p>
 
-<% if user_signed_in? %>
-<p><%= button_to "Add to your favorites", action: "addCollege" , :current_college => @college.id%></p>
-<% end %>
+
 
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 
