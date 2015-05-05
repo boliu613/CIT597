@@ -56,3 +56,8 @@ Then(/^I should be able to sign out and see sign in and sign up link in the page
   assert page.has_content?("Sign in")
   assert page.has_content?("Sign up")
 end
+
+
+When(/^click the "(.*?)" button$/) do |arg1|
+  click_button 'Add to your favorites'
+end

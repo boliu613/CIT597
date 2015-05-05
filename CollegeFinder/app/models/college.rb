@@ -31,20 +31,21 @@ class College < ActiveRecord::Base
   attr_accessible :longitude,:latitude,:website,:admweb,:adm_total, :app_total, :control, :enroll_total, :grad_enroll, :inst_name, :per_adm, :state, :stu_fac_ratio, :total_enroll, :tuition_fees, :u_id, :under_enroll, :urbanization
 
   has_and_belongs_to_many :users
+ 
+  # import csv database 
+# require 'csv'
   
-require 'csv'
+  # def self.import(file)
+  #   CSV.foreach(file.path, headers: true) do |row|
 
-  def self.import(file)
-    CSV.foreach(file.path, headers: true) do |row|
+  #     college_hash = row.to_hash 
+  #     college = College.where(id: college_hash["id"])
 
-      college_hash = row.to_hash 
-      college = College.where(id: college_hash["id"])
-
-      if college.count == 1
-        college.first.update_attributes(college_hash)
-      else
-        College.create!(college_hash)
-      end # end if !college.nil?
-    end # end CSV.foreach
-  end # end self.import(file)
+  #     if college.count == 1
+  #       college.first.update_attributes(college_hash)
+  #     else
+  #       College.create!(college_hash)
+  #     end # end if !college.nil?
+  #   end # end CSV.foreach
+  # end # end self.import(file)
 end

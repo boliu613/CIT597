@@ -26,3 +26,11 @@ Feature: User sign in page
       		And I'm in the homepage
     	When click the sign out 
     	Then I should be able to sign out and see sign in and sign up link in the page
+
+    Scenario: User sign out
+    	Given I have set up the user databases
+    		And I have set up the test databases
+			And I sign in with username and password
+      		And I'm in college_id page
+      	When click the "Add to your favorites" button
+		Then I should see school information

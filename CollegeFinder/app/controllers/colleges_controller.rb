@@ -3,10 +3,11 @@ class CollegesController < ApplicationController
 	@colleges = College.all
   end
 
-  def import
-	College.import(params[:file])
-    	redirect_to root_url, notice: "Colleges imported."
-  end
+# import csv database
+ #  def import
+	# College.import(params[:file])
+ #    	redirect_to root_url, notice: "Colleges imported."
+ #  end
 
 
   
@@ -64,11 +65,11 @@ class CollegesController < ApplicationController
     conditions = ""
     count = 0
     if params[:rural].present?
-      if count > 0
-        conditions += " or urbanization LIKE '%Rural%'"
-      else
-        conditions += "urbanization LIKE '%Rural%'"
-      end
+      # if count > 0
+      #   conditions += " or urbanization LIKE '%Rural%'"
+      # else
+      conditions += "urbanization LIKE '%Rural%'"
+      # end
       count += 1
     end
     if params[:suburban].present?

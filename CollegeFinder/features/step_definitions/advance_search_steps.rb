@@ -90,7 +90,7 @@ When(/^I select multiple conditions$/) do
   select("$5,000", :from => 'tuition_min')
   select("$60,000", :from => 'tuition_max')
   check("Private not-for-profit")
-  check("city")
+  check("City")
 end
 
 Then(/^I should be able to see the results match the multiple conditions$/) do
@@ -99,8 +99,12 @@ Then(/^I should be able to see the results match the multiple conditions$/) do
   assert page.has_no_content?("Bristol Community College")
 end
 
-When(/^I enter some conditions and match nothing$/) do
-  fill_in 'College Name:', :with => "Upenn"
+When(/^I enter some conditions and match nothing$/) do  
+  check("Private for-profit")
+  check("Rural")
+  check("Suburb")
+  check("City")
+  check("Town")
 end
 
 Then(/^I should be able to see the not found message$/) do
