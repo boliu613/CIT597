@@ -1,3 +1,4 @@
+<div class="container">
 <h1>Advance Search</h1>
 
 <%= form_tag(colleges_advance_search_path, :method => "get") do %>
@@ -85,3 +86,4 @@
 <% else %>
 Not Found!
 <% end %>
+</div>

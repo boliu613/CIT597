@@ -1,14 +1,14 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/Users/boliu/GitHub/CIT597/CollegeFinder/config/environment.rb": [
+      "/home/melody/GithubProject/CIT597/CollegeFinder/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/Users/boliu/GitHub/CIT597/CollegeFinder/config/application.rb": [
+      "/home/melody/GithubProject/CIT597/CollegeFinder/config/application.rb": [
         1,
         null,
         1,
@@ -72,7 +72,7 @@
         null,
         null
       ],
-      "/Users/boliu/GitHub/CIT597/CollegeFinder/config/boot.rb": [
+      "/home/melody/GithubProject/CIT597/CollegeFinder/config/boot.rb": [
         1,
         null,
         null,
@@ -80,7 +80,7 @@
         null,
         1
       ],
-      "/Users/boliu/GitHub/CIT597/CollegeFinder/config/environments/test.rb": [
+      "/home/melody/GithubProject/CIT597/CollegeFinder/config/environments/test.rb": [
         1,
         null,
         null,
@@ -119,7 +119,7 @@
         1,
         null
       ],
-      "/Users/boliu/GitHub/CIT597/CollegeFinder/config/initializers/backtrace_silencers.rb": [
+      "/home/melody/GithubProject/CIT597/CollegeFinder/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -128,7 +128,7 @@
         null,
         null
       ],
-      "/Users/boliu/GitHub/CIT597/CollegeFinder/config/initializers/devise.rb": [
+      "/home/melody/GithubProject/CIT597/CollegeFinder/config/initializers/devise.rb": [
         null,
         null,
         1,
@@ -326,23 +326,6 @@
         null,
         null,
         null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/boliu/GitHub/CIT597/CollegeFinder/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -359,14 +342,31 @@
         null,
         null
       ],
-      "/Users/boliu/GitHub/CIT597/CollegeFinder/config/initializers/mime_types.rb": [
+      "/home/melody/GithubProject/CIT597/CollegeFinder/config/initializers/inflections.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null,
         null,
         null,
         null,
         null
       ],
-      "/Users/boliu/GitHub/CIT597/CollegeFinder/config/initializers/secret_token.rb": [
+      "/home/melody/GithubProject/CIT597/CollegeFinder/config/initializers/mime_types.rb": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/home/melody/GithubProject/CIT597/CollegeFinder/config/initializers/secret_token.rb": [
         null,
         null,
         null,
@@ -375,7 +375,7 @@
         null,
         1
       ],
-      "/Users/boliu/GitHub/CIT597/CollegeFinder/config/initializers/session_store.rb": [
+      "/home/melody/GithubProject/CIT597/CollegeFinder/config/initializers/session_store.rb": [
         null,
         null,
         1,
@@ -385,7 +385,7 @@
         null,
         null
       ],
-      "/Users/boliu/GitHub/CIT597/CollegeFinder/config/initializers/wrap_parameters.rb": [
+      "/home/melody/GithubProject/CIT597/CollegeFinder/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -401,7 +401,7 @@
         1,
         null
       ],
-      "/Users/boliu/GitHub/CIT597/CollegeFinder/config/routes.rb": [
+      "/home/melody/GithubProject/CIT597/CollegeFinder/config/routes.rb": [
         1,
         1,
         1,
@@ -483,7 +483,7 @@
         null,
         null
       ],
-      "/Users/boliu/GitHub/CIT597/CollegeFinder/app/models/user.rb": [
+      "/home/melody/GithubProject/CIT597/CollegeFinder/app/models/user.rb": [
         null,
         null,
         null,
@@ -540,7 +540,7 @@
         null,
         null
       ],
-      "/Users/boliu/GitHub/CIT597/CollegeFinder/app/controllers/application_controller.rb": [
+      "/home/melody/GithubProject/CIT597/CollegeFinder/app/controllers/application_controller.rb": [
         1,
         1,
         1,
@@ -551,19 +551,19 @@
         null,
         null
       ],
-      "/Users/boliu/GitHub/CIT597/CollegeFinder/app/helpers/application_helper.rb": [
+      "/home/melody/GithubProject/CIT597/CollegeFinder/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/boliu/GitHub/CIT597/CollegeFinder/app/helpers/colleges_helper.rb": [
+      "/home/melody/GithubProject/CIT597/CollegeFinder/app/helpers/colleges_helper.rb": [
         1,
         null
       ],
-      "/Users/boliu/GitHub/CIT597/CollegeFinder/app/helpers/users_helper.rb": [
+      "/home/melody/GithubProject/CIT597/CollegeFinder/app/helpers/users_helper.rb": [
         1,
         null
       ],
-      "/Users/boliu/GitHub/CIT597/CollegeFinder/app/controllers/colleges_controller.rb": [
+      "/home/melody/GithubProject/CIT597/CollegeFinder/app/controllers/colleges_controller.rb": [
         1,
         1,
         0,
@@ -674,7 +674,7 @@
         null,
         null
       ],
-      "/Users/boliu/GitHub/CIT597/CollegeFinder/app/models/college.rb": [
+      "/home/melody/GithubProject/CIT597/CollegeFinder/app/models/college.rb": [
         null,
         null,
         null,
@@ -726,12 +726,12 @@
         null,
         null
       ],
-      "/Users/boliu/GitHub/CIT597/CollegeFinder/app/controllers/users_controller.rb": [
+      "/home/melody/GithubProject/CIT597/CollegeFinder/app/controllers/users_controller.rb": [
         1,
         1,
         null
       ],
-      "/Users/boliu/GitHub/CIT597/CollegeFinder/features/support/paths.rb": [
+      "/home/melody/GithubProject/CIT597/CollegeFinder/features/support/paths.rb": [
         null,
         null,
         null,
@@ -771,7 +771,7 @@
         null,
         1
       ],
-      "/Users/boliu/GitHub/CIT597/CollegeFinder/features/support/selectors.rb": [
+      "/home/melody/GithubProject/CIT597/CollegeFinder/features/support/selectors.rb": [
         null,
         null,
         null,
@@ -817,7 +817,7 @@
         null,
         1
       ],
-      "/Users/boliu/GitHub/CIT597/CollegeFinder/features/step_definitions/advance_search_steps.rb": [
+      "/home/melody/GithubProject/CIT597/CollegeFinder/features/step_definitions/advance_search_steps.rb": [
         1,
         9,
         null,
@@ -931,7 +931,7 @@
         null,
         null
       ],
-      "/Users/boliu/GitHub/CIT597/CollegeFinder/features/step_definitions/search_steps.rb": [
+      "/home/melody/GithubProject/CIT597/CollegeFinder/features/step_definitions/search_steps.rb": [
         1,
         2,
         null,
@@ -949,7 +949,7 @@
         1,
         null
       ],
-      "/Users/boliu/GitHub/CIT597/CollegeFinder/features/step_definitions/showcollege_steps.rb": [
+      "/home/melody/GithubProject/CIT597/CollegeFinder/features/step_definitions/showcollege_steps.rb": [
         1,
         1,
         null,
@@ -959,7 +959,7 @@
         null,
         null
       ],
-      "/Users/boliu/GitHub/CIT597/CollegeFinder/features/step_definitions/user_steps.rb": [
+      "/home/melody/GithubProject/CIT597/CollegeFinder/features/step_definitions/user_steps.rb": [
         1,
         5,
         null,
@@ -1023,7 +1023,7 @@
         null,
         null
       ],
-      "/Users/boliu/GitHub/CIT597/CollegeFinder/features/step_definitions/web_steps.rb": [
+      "/home/melody/GithubProject/CIT597/CollegeFinder/features/step_definitions/web_steps.rb": [
         null,
         null,
         null,
@@ -1280,6 +1280,6 @@
         null
       ]
     },
-    "timestamp": 1430783332
+    "timestamp": 1430784615
   }
 }

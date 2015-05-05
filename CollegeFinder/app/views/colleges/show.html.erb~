@@ -1,9 +1,7 @@
+<h1>Basic Information</h1>
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>School ID:</b>
-  <%= @college.u_id %>
-</p>
+
 
 <p>
   <b>Institution:</b>
@@ -79,5 +77,46 @@
   <b>Admission URL:</b>
   <%= @college.admweb %>
 </p>
+
+<p>
+  <b>Latitude:</b>
+  <%= @college.latitude %>
+</p>
+
+<p>
+  <b>Longitude</b>
+  <%= @college.longitude %>
+</p>
+
+<% if user_signed_in? %>
+<p><%= button_to "Add to your favorites", action: "addCollege" , :current_college => @college.id%></p>
+<% end %>
+
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+<script>
+  var myCenter=new google.maps.LatLng(<%= @college.latitude %>,<%= @college.longitude %>);
+
+  function initialize()
+  {
+    var mapProp = {
+      center:myCenter,
+      zoom:5,
+      mapTypeId:google.maps.MapTypeId.ROADMAP
+    };
+
+    var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+    var marker=new google.maps.Marker({
+      position:myCenter,
+    });
+
+    marker.setMap(map);
+  }
+
+  google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
 
 
