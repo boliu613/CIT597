@@ -27,7 +27,7 @@ Feature: User sign in page
     	When click the sign out 
     	Then I should be able to sign out and see sign in and sign up link in the page
 
-    Scenario: User sign out
+    Scenario: User add favourite colleges
     	Given I have set up the user databases
     		And I have set up the test databases
 			And I sign in with username and password
